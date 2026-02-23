@@ -404,6 +404,19 @@
             <artifactId>QLExpress</artifactId>
             <version>3.3.1</version>
         </dependency>
+
+        <!-- Pinned Tomcat embedded dependencies to address security vulnerabilities -->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>8.5.100</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-websocket</artifactId>
+            <version>8.5.99</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
